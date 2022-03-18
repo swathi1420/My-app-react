@@ -5,6 +5,8 @@ import { INPUT_CONSTANT } from "./inputConstant";
 import { BUTTON_CONSTANT } from "./buttonConstant";
 import LoginButton from '../../components/Button';
 import { Redirect } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 
 
@@ -17,8 +19,8 @@ const App = () => {
   };
   const handleonSubmit = (e) => {
     e.preventDefault();
-    console.log(input);
-    return <Redirect to='/dashboard' />
+    
+   
 
 
   };
@@ -35,10 +37,12 @@ const App = () => {
       })}
       
       {BUTTON_CONSTANT.map((element) => {
-          return <LoginButton classMethod={element.classLabel} name={element?.name}  id={element.id} label={element.label} method={(event) => handleonSubmit(element)} />
-          
+        
+          return  <Link to ="/dashboard"> <LoginButton classMethod={element.classLabel} name={element?.name}  id={element.id} label={element.label} method={(event) => handleonSubmit(element)} />
+          </Link>
           
       })}
+      
       </form>
     </div>
     );
