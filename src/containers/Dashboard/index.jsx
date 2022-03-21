@@ -49,7 +49,7 @@ function Dashboard() {
           })}
         </ul>
       </div>
-      {/* <>
+      <>
       <BrowserRouter>
     
     <Switch>
@@ -59,7 +59,7 @@ function Dashboard() {
       <Route path="/dashboard/menu3" exact component={Contact}></Route>
     </Switch>
     </BrowserRouter>
-      </>  */}
+      </> 
     </>
   );
 }

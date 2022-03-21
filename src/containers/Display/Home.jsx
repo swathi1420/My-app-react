@@ -2,9 +2,7 @@
 
 function Home() {
     return (
-      
-        
-        <div className="home">
+      <div className="home">
           Home Page
         </div>
       

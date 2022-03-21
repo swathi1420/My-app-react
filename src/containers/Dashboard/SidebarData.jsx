@@ -6,7 +6,8 @@ export const SidebarData = [
         title: "Home",
         cName: "sidebar-item",
         icon: <FaIcons.FaHome />,
-        path: "/dashboard/menu1"
+        path: "/dashboard/menu1",
+    
     },
     {
         id : 2,
