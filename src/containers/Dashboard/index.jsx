@@ -1,16 +1,9 @@
 import React, { useState } from "react";
-
-import "./Dashboard.css";
-import {Link} from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
+import { Link, Outlet } from "react-router-dom";
+import "./Dashboard.css";
 import { SidebarData } from "./SidebarData";
-import { BrowserRouter } from "react-router-dom";
-import { Switch } from "react-router-dom";
-import { Route } from "react-router-dom";
-import LoginButton from "../../components/Button";
-import Home from "../Display/Home";
-import About from "../Display/About";
-import Contact from "../Display/Contact";
+
 
 function Dashboard() {
   const [sidebar, setSidebar] = useState(false);
@@ -49,17 +42,8 @@ function Dashboard() {
           })}
         </ul>
       </div>
-      {/* <>
-      <BrowserRouter>
     
-    <Switch>
-    
-      <Route path="/dashboard/menu1" exact component={Home}></Route>
-      <Route path="/dashboard/menu2" exact component={About}></Route>
-      <Route path="/dashboard/menu3" exact component={Contact}></Route>
-    </Switch>
-    </BrowserRouter>
-      </>  */}
+      <Outlet />
     </>
   );
 }
