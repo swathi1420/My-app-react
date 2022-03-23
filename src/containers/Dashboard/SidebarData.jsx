@@ -3,7 +3,7 @@ import * as FaIcons from "react-icons/fa";
 export const SidebarData = [
     {
         id : 1,
-        title: "Home",
+        title: "About",
         cName: "sidebar-item",
         icon: <FaIcons.FaHome />,
         path: "/dashboard/menu1",
@@ -11,13 +11,13 @@ export const SidebarData = [
     },
     {
         id : 2,
-        title: "About",
+        title: "Contact",
         cName: "sidebar-item",
         icon: <FaIcons.FaHome />,
         path: "/dashboard/menu2"
     },{
         id : 1,
-        title: "Contact",
+        title: "Home",
         cName: "sidebar-item",
         icon: <FaIcons.FaHome />,
         path: "/dashboard/menu3"

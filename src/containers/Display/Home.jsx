@@ -1,12 +1,37 @@
-
+import { TableData } from './tableData';
 
 function Home() {
-    return (
-      <div className="home">
-          Home Page
-        </div>
-      
-    );
-  }
+  const DisplayData=TableData.map(
+    (info)=>{
+        return(
+            <tr>
+                <td>{info.id}</td>
+                <td>{info.name}</td>
+                <td>{info.place}</td>
+            </tr>
+        )
+    }
+)
 
-  export default Home;
+return(
+  <div className='table-data'>
+      <table>
+          <thead>
+              <tr>
+              <th>Sr.NO</th>
+              <th>Name</th>
+              <th>Place</th>
+              </tr>
+          </thead>
+          <tbody>
+            
+            {DisplayData}
+              
+          </tbody>
+      </table>
+       
+  </div>
+)
+}
+
+export default Home;
